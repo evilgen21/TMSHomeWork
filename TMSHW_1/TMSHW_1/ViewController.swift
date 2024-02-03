@@ -21,15 +21,59 @@ class ViewController: UIViewController {
     @IBOutlet weak var switchB4 : UISwitch!
     @IBOutlet weak var switchB5 : UISwitch!
     
-    @IBOutlet weak var Textview1   : UITextView!
+   
+    @IBOutlet weak var Textview1: UITextView!
     
-    @IBAction func button1(_ sender: UIButton) {
+
+    @IBAction func switchB1Click(_ sender: UISwitch) {
+       
+            switchB2.isOn = false
+            switchB3.isOn = false
+            switchB4.isOn = false
+            switchB5.isOn = false
+      
+    }
+    
+    @IBAction func switchB2click(_ sender: UISwitch) {
+        switchB1.isOn = false
+        switchB3.isOn = false
+        switchB4.isOn = false
+        switchB5.isOn = false
+    }
+    
+    @IBAction func switchB3click(_ sender: UISwitch) {
+        switchB1.isOn = false
+        switchB2.isOn = false
+        switchB4.isOn = false
+        switchB5.isOn = false
+    }
+    
+    @IBAction func switchB4click(_ sender: UISwitch) {
+        switchB1.isOn = false
+        switchB2.isOn = false
+        switchB3.isOn = false
+        switchB5.isOn = false
+    }
+    
+    @IBAction func switchB5click(_ sender: UISwitch) {
+        switchB1.isOn = false
+        switchB2.isOn = false
+        switchB3.isOn = false
+        switchB4.isOn = false
+    }
+    
+    
+    
+    
+        @IBAction func buttonOne(_ sender: Any) {
+    
         
-        label1.text = "Yuhoo...2"
-               switchB1.tintColor = .red
-               switchB1.isOn = false
+         switchB1.isOn = false
+       label1.text = "Yuhoo...2"
         Textview1.textColor = .blue
-        Textview1.text = "многотекстамноготекстамноготекстамноготекстамноготекстамноготекстамноготекстамноготекста многотекстамноготекстамноготекста многотекстамноготекстамноготекста"
+        Textview1.text = "многотекстамного"
+      
+         
     }
     
 }
