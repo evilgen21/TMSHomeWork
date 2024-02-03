@@ -38,18 +38,18 @@
                                 <rect key="frame" x="97" y="686" width="187" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Выполнить"/>
                                 <connections>
                                     <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G4X-Th-g1E"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-82-cDV">
-                                <rect key="frame" x="44" y="129" width="296" height="324"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7n-82-cDV">
+                                <rect key="frame" x="40" y="129" width="300" height="324"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа </string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4MQ-yJ-6ha">
@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" systemColor="systemGreenColor"/>
                                 <connections>
-                                    <action selector="switchB2click:" destination="BYZ-38-t0r" eventType="valueChanged" id="rL1-67-eML"/>
+                                    <action selector="switchB2click:" destination="BYZ-38-t0r" eventType="valueChanged" id="bHf-pp-BrE"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nwt-fn-9K7">
@@ -120,8 +120,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Задание 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c9d-zT-eN5">
-                                <rect key="frame" x="120" y="461" width="141" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Задание 1-2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c9d-zT-eN5">
+                                <rect key="frame" x="120" y="461" width="168" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -135,7 +135,7 @@
                         <outlet property="Textview1" destination="z7n-82-cDV" id="YLi-2n-dQ3"/>
                         <outlet property="label1" destination="oWW-2i-P5E" id="vTd-zL-IvS"/>
                         <outlet property="switchB1" destination="4MQ-yJ-6ha" id="SGi-cO-ngS"/>
-                        <outlet property="switchB2" destination="ma2-zO-ai6" id="wtQ-45-qPR"/>
+                        <outlet property="switchB2" destination="ma2-zO-ai6" id="yDD-bJ-Pmh"/>
                         <outlet property="switchB3" destination="nwt-fn-9K7" id="o7N-rD-yZJ"/>
                         <outlet property="switchB4" destination="GGQ-Kd-KRh" id="kTb-I9-mTn"/>
                         <outlet property="switchB5" destination="YvE-8P-BnH" id="9Xa-Z1-VP4"/>
