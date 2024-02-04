@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var switchB3 : UISwitch!
     @IBOutlet weak var switchB4 : UISwitch!
     @IBOutlet weak var switchB5 : UISwitch!
-    
+    @IBOutlet weak var switchB6 : UISwitch!
    
     @IBOutlet weak var Textview1: UITextView!
     
@@ -35,6 +35,7 @@ class ViewController: UIViewController {
             switchB3.isOn = false
             switchB4.isOn = false
             switchB5.isOn = false
+            switchB6.isOn = false
         
         currentFont = UIFont.systemFont(ofSize: 21)
         Textview1.font = currentFont
@@ -51,6 +52,7 @@ class ViewController: UIViewController {
         switchB3.isOn = false
         switchB4.isOn = false
         switchB5.isOn = false
+        switchB6.isOn = false
         currentFont = UIFont.systemFont(ofSize: 21)
         Textview1.font = currentFont
         
@@ -65,6 +67,7 @@ class ViewController: UIViewController {
         switchB2.isOn = false
         switchB4.isOn = false
         switchB5.isOn = false
+        switchB6.isOn = false
         currentFont = UIFont.systemFont(ofSize: 21)
         Textview1.font = currentFont
         
@@ -79,6 +82,7 @@ class ViewController: UIViewController {
         switchB2.isOn = false
         switchB3.isOn = false
         switchB5.isOn = false
+        switchB6.isOn = false
         currentFont = UIFont.systemFont(ofSize: 21)
         Textview1.font = currentFont
         
@@ -92,6 +96,7 @@ class ViewController: UIViewController {
         switchB2.isOn = false
         switchB3.isOn = false
         switchB4.isOn = false
+        switchB6.isOn = false
         currentFont = UIFont.systemFont(ofSize: 21)
         Textview1.font = currentFont
         
@@ -99,6 +104,26 @@ class ViewController: UIViewController {
         
         if switchB5.isOn == false { Textview1.text = " Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа  " }
     }
+    
+    
+    @IBAction func switchB6click(_ sender: UISwitch) {
+        switchB1.isOn = false
+        switchB2.isOn = false
+        switchB3.isOn = false
+        switchB4.isOn = false
+        switchB5.isOn = false
+        
+        currentFont = UIFont.systemFont(ofSize: 21)
+        Textview1.font = currentFont
+        
+        Textview1.text = " Сделать проверку: является ли число четным: 13, 2, 20, 21, 76. \n\n В переменной day лежит какое-то число от 1 до 31 (вы задаете сами любое).\n Определить, в какую декаду месяца попадает это число (в первую, вторую или третью)."
+        
+        if switchB6.isOn == false { Textview1.text = " Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа Домашняя работа  " }
+        
+    }
+    
+    
+    
     
     
     
@@ -175,7 +200,7 @@ class ViewController: UIViewController {
                 Textview1.text = String("Текущее время: \(hour)")
                 
                 if hour < 21 {
-                    Textview1.text = Textview1.text + " часа. \n Еще нет 22 часов, значит: \n --- \n\n День "
+                    Textview1.text = Textview1.text + " ч. \n Еще нет 22 часов, значит:  День "
                     
                 } else { Textview1.text = Textview1.text + " часа. \n Совсем темно уже! \n Наступила ночь " }
            
@@ -195,6 +220,44 @@ class ViewController: UIViewController {
                 
             }
                 
+            
+            
+            if  switchB6.isOn == true {
+                var numb: [Int] = [13, 2, 20, 21, 76]
+                Textview1.text = "Даны числа 13, 2, 20, 21, 76"
+
+                for chislo in numb {
+                    if chislo % 2 == 0 {
+                        Textview1.text = Textview1.text + "\n" + String(" \(chislo)  - число четное" )
+                        
+                  }
+                }
+                
+    
+                let date = Date()
+                let  isNight = Calendar.current
+                let Dday = isNight.component(.day, from: date)
+                
+                Textview1.text = Textview1.text + String("\n \n Сегодня \(Dday) число месяца ")
+             
+                switch Dday {
+            case 1...10:
+                    Textview1.text = Textview1.text + String("Первая декада \n")
+            case 11...20:
+                        Textview1.text = Textview1.text + String("Вторая декада \n")
+            case 21...31:
+                        Textview1.text = Textview1.text + String("Третья декада \n")
+
+                
+            default: Textview1.text = Textview1.text
+                    
+                }
+            
+            }
+            
+            
+            
+            
         }
     
 }
